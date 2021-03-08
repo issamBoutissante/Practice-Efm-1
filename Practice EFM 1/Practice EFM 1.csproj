@@ -65,6 +65,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>biblioDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="EmpruntsParAnneCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpruntsParAnneCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,11 +90,27 @@
       <DependentUpon>Gestion_Emprunts.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
+    <Compile Include="OuvrageCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OuvrageCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OuvragesParAnneCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OuvragesParAnneCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="adherentsCrystalReports.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>adherentsCrystalReports.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpruntsParAnneCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EmpruntsParAnneCrystalReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -98,6 +120,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Gestion_Emprunts.resx">
       <DependentUpon>Gestion_Emprunts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OuvrageCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OuvrageCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OuvragesParAnneCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OuvragesParAnneCrystalReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

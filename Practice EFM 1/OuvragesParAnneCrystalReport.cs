@@ -16,14 +16,14 @@ namespace Practice_EFM_1 {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class adherentsCrystalReports : ReportClass {
+    public class OuvragesParAnneCrystalReport : ReportClass {
         
-        public adherentsCrystalReports() {
+        public OuvragesParAnneCrystalReport() {
         }
         
         public override string ResourceName {
             get {
-                return "adherentsCrystalReports.rpt";
+                return "OuvragesParAnneCrystalReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Practice_EFM_1 {
         
         public override string FullResourceName {
             get {
-                return "Practice_EFM_1.adherentsCrystalReports.rpt";
+                return "Practice_EFM_1.OuvragesParAnneCrystalReport.rpt";
             }
             set {
                 // Do nothing
@@ -87,28 +87,12 @@ namespace Practice_EFM_1 {
                 return this.ReportDefinition.Sections[4];
             }
         }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_date_de {
-            get {
-                return this.DataDefinition.ParameterFields[0];
-            }
-        }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_date_a {
-            get {
-                return this.DataDefinition.ParameterFields[1];
-            }
-        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedadherentsCrystalReports : Component, ICachedReport {
+    public class CachedOuvragesParAnneCrystalReport : Component, ICachedReport {
         
-        public CachedadherentsCrystalReports() {
+        public CachedOuvragesParAnneCrystalReport() {
         }
         
         [Browsable(false)]
@@ -145,7 +129,7 @@ namespace Practice_EFM_1 {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            adherentsCrystalReports rpt = new adherentsCrystalReports();
+            OuvragesParAnneCrystalReport rpt = new OuvragesParAnneCrystalReport();
             rpt.Site = this.Site;
             return rpt;
         }

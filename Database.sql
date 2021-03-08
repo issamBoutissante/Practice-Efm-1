@@ -42,5 +42,7 @@ insert into Emprunts values(1,1,1,getdate(),getdate())
 -- Le code adhérent doit être automatiquement incrémenter. (1Pts
 -- j'ai ajoute la contraint identity
 
-select codAdh,nomAdh,cinAdh,dnAdh from adherents
-where dnAdh between '20/02/2000' and '20/02/2022';
+select codeOuv,titOuv,nomDit,nomAdh,dateEmp from ouvrages join emprunts 
+on ouvrages.codeOuv=Emprunts.codOuv 
+join adherents
+on adherents.codAdh=Emprunts.codAdh

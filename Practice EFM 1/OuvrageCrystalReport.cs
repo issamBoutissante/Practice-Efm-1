@@ -16,14 +16,14 @@ namespace Practice_EFM_1 {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class adherentsCrystalReports : ReportClass {
+    public class OuvrageCrystalReport : ReportClass {
         
-        public adherentsCrystalReports() {
+        public OuvrageCrystalReport() {
         }
         
         public override string ResourceName {
             get {
-                return "adherentsCrystalReports.rpt";
+                return "OuvrageCrystalReport.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Practice_EFM_1 {
         
         public override string FullResourceName {
             get {
-                return "Practice_EFM_1.adherentsCrystalReports.rpt";
+                return "Practice_EFM_1.OuvrageCrystalReport.rpt";
             }
             set {
                 // Do nothing
@@ -66,7 +66,7 @@ namespace Practice_EFM_1 {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection1 {
             get {
                 return this.ReportDefinition.Sections[2];
             }
@@ -74,7 +74,7 @@ namespace Practice_EFM_1 {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,7 +82,7 @@ namespace Practice_EFM_1 {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection1 {
             get {
                 return this.ReportDefinition.Sections[4];
             }
@@ -90,25 +90,25 @@ namespace Practice_EFM_1 {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_date_de {
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
             get {
-                return this.DataDefinition.ParameterFields[0];
+                return this.ReportDefinition.Sections[5];
             }
         }
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_date_a {
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
             get {
-                return this.DataDefinition.ParameterFields[1];
+                return this.ReportDefinition.Sections[6];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedadherentsCrystalReports : Component, ICachedReport {
+    public class CachedOuvrageCrystalReport : Component, ICachedReport {
         
-        public CachedadherentsCrystalReports() {
+        public CachedOuvrageCrystalReport() {
         }
         
         [Browsable(false)]
@@ -145,7 +145,7 @@ namespace Practice_EFM_1 {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            adherentsCrystalReports rpt = new adherentsCrystalReports();
+            OuvrageCrystalReport rpt = new OuvrageCrystalReport();
             rpt.Site = this.Site;
             return rpt;
         }

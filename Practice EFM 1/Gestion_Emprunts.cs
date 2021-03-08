@@ -99,7 +99,25 @@ namespace Practice_EFM_1
         }
         private void imprimerOuvrages_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                connection.Open();
+                DataTable ouvrageTable = new DataTable();
+                new SqlDataAdapter("select codeOuv,titOuv,nomDit,nomAdh,dateEmp from ouvrages join emprunts on ouvrages.codeOuv = Emprunts.codOuv " +
+                    "join adherents " +
+                    "on adherents.codAdh = Emprunts.codAdh ", connection).Fill(ouvrageTable);
+                OuvrageCrystalReport ouvrageReport = new OuvrageCrystalReport();
+                ouvrageReport.SetDataSource(ouvrageTable);
+                crystalReportViewer1.ReportSource = ouvrageReport;
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
 
         private void imprimerAdherents_Click(object sender, EventArgs e)
@@ -112,8 +130,9 @@ namespace Practice_EFM_1
                     $" '{Date_De.Text}' and '{Date_A.Text}'; ",connection).Fill(adherentsTable);
                 adherentsCrystalReports adherentReports = new adherentsCrystalReports();
                 adherentReports.SetDataSource(adherentsTable);
+                adherentReports.SetParameterValue("date_de", Date_De.Text);
+                adherentReports.SetParameterValue("date_a", Date_A.Text);
                 crystalReportViewer1.ReportSource = adherentReports;
-                
             }catch(SqlException ex)
             {
                 MessageBox.Show(ex.Message);
@@ -121,6 +140,21 @@ namespace Practice_EFM_1
             finally
             {
                 connection.Close();
+            }
+        }
+
+        private void EmpruntParAnne_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.empruntsTableAdapter.Fill(this.biblioDataSet.Emprunts);
+                EmpruntsParAnneCrystalReport EPA = new EmpruntsParAnneCrystalReport();
+                EPA.SetDataSource((DataTable)this.biblioDataSet.Emprunts);
+                crystalReportViewer1.ReportSource = EPA;
+
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message,"Error");
             }
         }
     }

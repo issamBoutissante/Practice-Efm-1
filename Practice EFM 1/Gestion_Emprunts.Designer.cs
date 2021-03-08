@@ -61,6 +61,7 @@ namespace Practice_EFM_1
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.Date_A = new System.Windows.Forms.DateTimePicker();
+            this.EmpruntParAnne = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.adherentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biblioDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ouvragesPasEmprinteBindingSource)).BeginInit();
@@ -301,11 +302,22 @@ namespace Practice_EFM_1
             this.Date_A.Size = new System.Drawing.Size(96, 20);
             this.Date_A.TabIndex = 49;
             // 
+            // EmpruntParAnne
+            // 
+            this.EmpruntParAnne.Location = new System.Drawing.Point(601, 57);
+            this.EmpruntParAnne.Name = "EmpruntParAnne";
+            this.EmpruntParAnne.Size = new System.Drawing.Size(134, 23);
+            this.EmpruntParAnne.TabIndex = 51;
+            this.EmpruntParAnne.Text = "Emprunt Par Anne";
+            this.EmpruntParAnne.UseVisualStyleBackColor = true;
+            this.EmpruntParAnne.Click += new System.EventHandler(this.EmpruntParAnne_Click);
+            // 
             // Gestion_Emprunts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 477);
+            this.Controls.Add(this.EmpruntParAnne);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.Date_A);
             this.Controls.Add(this.label4);
@@ -375,5 +387,6 @@ namespace Practice_EFM_1
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker Date_A;
+        private System.Windows.Forms.Button EmpruntParAnne;
     }
 }
