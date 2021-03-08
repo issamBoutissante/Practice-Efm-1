@@ -33,5 +33,15 @@ namespace Practice_EFM_1
         {
             this.CenterToScreen();
         }
+
+        private void ouvragesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emprintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OuverForm(new Gestion_Emprunts());
+        }
     }
 }

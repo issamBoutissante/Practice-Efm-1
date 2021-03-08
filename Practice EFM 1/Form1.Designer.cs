@@ -44,7 +44,7 @@ namespace Practice_EFM_1
             this.emprintToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(893, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(810, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -60,18 +60,20 @@ namespace Practice_EFM_1
             this.ouvragesToolStripMenuItem.Name = "ouvragesToolStripMenuItem";
             this.ouvragesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
             this.ouvragesToolStripMenuItem.Text = "Ouvrages";
+            this.ouvragesToolStripMenuItem.Click += new System.EventHandler(this.ouvragesToolStripMenuItem_Click);
             // 
             // emprintToolStripMenuItem
             // 
             this.emprintToolStripMenuItem.Name = "emprintToolStripMenuItem";
-            this.emprintToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.emprintToolStripMenuItem.Text = "Emprint";
+            this.emprintToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.emprintToolStripMenuItem.Text = "Emprunt";
+            this.emprintToolStripMenuItem.Click += new System.EventHandler(this.emprintToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 434);
+            this.ClientSize = new System.Drawing.Size(810, 434);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;

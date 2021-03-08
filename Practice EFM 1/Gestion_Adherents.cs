@@ -8,7 +8,6 @@ namespace Practice_EFM_1
 {
     public partial class Gestion_Adherents : Form
     {
-        static string connectionString = ConfigurationManager.ConnectionStrings["monConnection"].ConnectionString;
         SqlConnection connection;
         SqlDataAdapter adherentsAdapter;
         DataSet dataSet;
@@ -16,7 +15,7 @@ namespace Practice_EFM_1
         public Gestion_Adherents()
         {
             InitializeComponent();
-            connection = new SqlConnection(connectionString);
+            connection = new SqlConnection(Global.connectionString);
             dataSet = new DataSet();
         }
 

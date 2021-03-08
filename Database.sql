@@ -23,6 +23,11 @@ nomDit varchar(20),
 dateDit date,
 datAch date
 )
+insert into ouvrages values(1,'who am i','anonymous','type','resOuv','theme','nomcol','nomDit',GETDATE(),GETDATE())
+insert into ouvrages values(2,'who am i','anonymous','type','resOuv','theme','nomcol','nomDit',GETDATE(),GETDATE())
+insert into ouvrages values(3,'who am i','anonymous','type','resOuv','theme','nomcol','nomDit',GETDATE(),GETDATE())
+insert into ouvrages values(4,'who am i','anonymous','type','resOuv','theme','nomcol','nomDit',GETDATE(),GETDATE())
+insert into ouvrages values(5,'who am i','anonymous','type','resOuv','theme','nomcol','nomDit',GETDATE(),GETDATE())
 
 create table Emprunts(
 NumEmp int primary key,
@@ -33,8 +38,7 @@ dateRet date,
 constraint fk_empunts_adherents foreign key(codAdh) references adherents(codAdh),
 constraint fk_emprunts_ouvrages foreign key(codOuv) references ouvrages(codeOuv)
 )
-
+insert into Emprunts values(1,1,1,getdate(),getdate())
 -- Le code adhérent doit être automatiquement incrémenter. (1Pts
 -- j'ai ajoute la contraint identity
-select * from adherents
 where left(nomAdh,1)='c'
