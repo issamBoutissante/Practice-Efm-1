@@ -1,0 +1,11 @@
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\bin\Debug\Practice EFM 1.exe.config
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\bin\Debug\Practice EFM 1.exe
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\bin\Debug\Practice EFM 1.pdb
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\obj\Debug\Practice EFM 1.csprojAssemblyReference.cache
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\obj\Debug\Practice_EFM_1.Form1.resources
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\obj\Debug\Practice_EFM_1.Gestion_Adherents.resources
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\obj\Debug\Practice_EFM_1.Properties.Resources.resources
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\obj\Debug\Practice EFM 1.csproj.GenerateResource.cache
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\obj\Debug\Practice EFM 1.csproj.CoreCompileInputs.cache
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\obj\Debug\Practice EFM 1.exe
+C:\Users\bouti\OneDrive\سطح المكتب\desktop dev client serveur\EFM\Practice EFM 1\Practice EFM 1\obj\Debug\Practice EFM 1.pdb
