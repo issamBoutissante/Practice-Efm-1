@@ -57,6 +57,10 @@ namespace Practice_EFM_1
             this.imprimerAdherents = new System.Windows.Forms.Button();
             this.imprimerOuvrages = new System.Windows.Forms.Button();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.Date_De = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Date_A = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.adherentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biblioDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ouvragesPasEmprinteBindingSource)).BeginInit();
@@ -235,7 +239,7 @@ namespace Practice_EFM_1
             // 
             // imprimerAdherents
             // 
-            this.imprimerAdherents.Location = new System.Drawing.Point(622, 77);
+            this.imprimerAdherents.Location = new System.Drawing.Point(771, 12);
             this.imprimerAdherents.Name = "imprimerAdherents";
             this.imprimerAdherents.Size = new System.Drawing.Size(134, 23);
             this.imprimerAdherents.TabIndex = 44;
@@ -245,7 +249,7 @@ namespace Practice_EFM_1
             // 
             // imprimerOuvrages
             // 
-            this.imprimerOuvrages.Location = new System.Drawing.Point(622, 37);
+            this.imprimerOuvrages.Location = new System.Drawing.Point(601, 11);
             this.imprimerOuvrages.Name = "imprimerOuvrages";
             this.imprimerOuvrages.Size = new System.Drawing.Size(134, 23);
             this.imprimerOuvrages.TabIndex = 45;
@@ -260,14 +264,52 @@ namespace Practice_EFM_1
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 123);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(801, 328);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(985, 352);
             this.crystalReportViewer1.TabIndex = 46;
+            // 
+            // Date_De
+            // 
+            this.Date_De.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Date_De.Location = new System.Drawing.Point(820, 57);
+            this.Date_De.Name = "Date_De";
+            this.Date_De.Size = new System.Drawing.Size(96, 20);
+            this.Date_De.TabIndex = 47;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(742, 58);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(19, 13);
+            this.label4.TabIndex = 48;
+            this.label4.Text = "de";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(742, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(13, 13);
+            this.label6.TabIndex = 50;
+            this.label6.Text = "a";
+            // 
+            // Date_A
+            // 
+            this.Date_A.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Date_A.Location = new System.Drawing.Point(820, 82);
+            this.Date_A.Name = "Date_A";
+            this.Date_A.Size = new System.Drawing.Size(96, 20);
+            this.Date_A.TabIndex = 49;
             // 
             // Gestion_Emprunts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(985, 477);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Date_A);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Date_De);
             this.Controls.Add(this.crystalReportViewer1);
             this.Controls.Add(this.imprimerOuvrages);
             this.Controls.Add(this.imprimerAdherents);
@@ -329,5 +371,9 @@ namespace Practice_EFM_1
         private System.Windows.Forms.Button imprimerAdherents;
         private System.Windows.Forms.Button imprimerOuvrages;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private System.Windows.Forms.DateTimePicker Date_De;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker Date_A;
     }
 }

@@ -41,4 +41,6 @@ constraint fk_emprunts_ouvrages foreign key(codOuv) references ouvrages(codeOuv)
 insert into Emprunts values(1,1,1,getdate(),getdate())
 -- Le code adhérent doit être automatiquement incrémenter. (1Pts
 -- j'ai ajoute la contraint identity
-where left(nomAdh,1)='c'
+
+select codAdh,nomAdh,cinAdh,dnAdh from adherents
+where dnAdh between '20/02/2000' and '20/02/2022';

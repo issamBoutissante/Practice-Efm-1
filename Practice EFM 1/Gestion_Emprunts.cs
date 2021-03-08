@@ -104,7 +104,24 @@ namespace Practice_EFM_1
 
         private void imprimerAdherents_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                connection.Open();
+                DataTable adherentsTable=new DataTable();
+                new SqlDataAdapter($"select codAdh,nomAdh,cinAdh,dnAdh from adherents where dnAdh between" +
+                    $" '{Date_De.Text}' and '{Date_A.Text}'; ",connection).Fill(adherentsTable);
+                adherentsCrystalReports adherentReports = new adherentsCrystalReports();
+                adherentReports.SetDataSource(adherentsTable);
+                crystalReportViewer1.ReportSource = adherentReports;
+                
+            }catch(SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
         }
     }
 }
